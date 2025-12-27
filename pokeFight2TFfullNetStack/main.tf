@@ -76,7 +76,7 @@ resource "aws_route_table" "pf2RouteTable" {
 # Associate the Subnet to the Route Table
 # --------------------------------------------------------------------
 
-resource "aws_route_table_association" "public" {
+resource "aws_route_table_association" "pf2RTassign" {
   subnet_id      = aws_subnet.pf2PublicSubnet.id
   route_table_id = aws_route_table.pf2RouteTable.id
 }
